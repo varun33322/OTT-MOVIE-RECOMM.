@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            background-image: url('https://raw.githubusercontent.com/kunalkashyap-1/AI_project/master/image_dark.jpg');
+            background-size: cover;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            flex-wrap: wrap;
+            margin: 35vh 25vw;
+            gap:1rem;
+            overflow: hidden;
+        }
+
+        .container>h1{
+            margin: 0 1rem;
+        }
+        
+        #inp{
+            margin: 0 1rem;
+            height: 2rem;
+            width: 30rem;
+        }
+
+        button{
+            height: 2.3rem;
+            width: 6rem;
+            margin: 1rem;
+            background-color: #E50914;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Movie Recommender System</h1>
+    <form action="/movie_recc" method="post">
+        <input id="inp" type="text" name="Movie" placeholder="Enter Movie Name">
+        <button type="submit" name="submit" >Recommend</button>
+    </form>
+</div>
+</body>
+</html>
